@@ -3,6 +3,7 @@
 	<groupId>ar.jenkins.pruebas</groupId>
 	<artifactId>proyecto-jenkins-prueba-1</artifactId>
 	<version>00.00.01</version>
+	<packaging>jar</packaging>
 
 	<properties>
 		<junit.jupiter.version>5.6.0</junit.jupiter.version>
@@ -18,6 +19,11 @@
 					<source>1.8</source>
 					<target>1.8</target>
 				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>3.0.0-M4</version>
 			</plugin>
 		</plugins>
 	</build>
